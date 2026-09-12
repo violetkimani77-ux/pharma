@@ -1,0 +1,12 @@
+generator client {
+  provider = "prisma-client"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// Domain models will be introduced only after their invariants and ownership
+// are approved in the domain model and ADRs. This schema intentionally starts
+// with the persistence foundation rather than inventing application tables.
